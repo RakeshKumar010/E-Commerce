@@ -1,0 +1,27 @@
+.mainproduct{
+    
+    height: 76vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.productList{
+    background-color: rgb(8, 53, 43);
+    border: 1px solid black;
+    
+    
+
+}
+.productList ul {
+    color: white;
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+}
+.productList ul li{
+
+    padding:10px 2rem ;
+    border: 1px solid black;
+    width: 15vw;
+
+}

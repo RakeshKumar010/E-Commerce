@@ -1,0 +1,6 @@
+#BackEnd
+BACK_END/node_modules
+#FrontEnd
+FRONT_END/node_modules
+FRONT_END/.parcel-cache
+FRONT_END/dist

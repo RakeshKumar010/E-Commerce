@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 80vh;
+
+}
+form{
+    background-color: rgb(8, 53, 43);
+    border: 4px solid rgb(8, 53, 43);
+    box-shadow: 1px 1px 18px 10px black inset;
+   display: flex;
+   flex-direction: column;
+    padding: 6rem;
+}
+input ,button{
+    width: 10vw;
+}

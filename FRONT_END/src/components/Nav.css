@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.main{
+    background-color: rgb(8, 53, 43);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img{
+    width: 7%;
+}
+.nav{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1rem;
+}
+.nav li a{
+    text-decoration: none; 
+    color:  aliceblue;
+    padding: 5px 10px;
+    box-shadow: 6px 6px 8px black;
+    border-radius: 20%;
+}
