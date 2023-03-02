@@ -27,6 +27,7 @@ const Login = () => {
         }
 
     },[])
+    
     const submitFun =async (e)=>{
         e.preventDefault();
         let result = await fetch('http://localhost:8080/login',{
@@ -41,11 +42,8 @@ const Login = () => {
 
         }else{
             alert('Plese enter correct details')
-
         }
        
-
-      
     }
   return (
     <div className='login'>

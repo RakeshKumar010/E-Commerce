@@ -1,19 +1,18 @@
 .mainproduct{
-    
-    height: 76vh;
+    height: 79vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: auto;
 }
 .productList{
-    background-color: rgb(8, 53, 43);
+    background-color: yellow;
     border: 1px solid black;
     
     
 
 }
 .productList ul {
-    color: white;
     display: flex;
     list-style-type: none;
     text-align: center;
@@ -24,4 +23,7 @@
     border: 1px solid black;
     width: 15vw;
 
+}
+.opration{
+    display:flex;
 }

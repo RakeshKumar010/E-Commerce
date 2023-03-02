@@ -41,15 +41,43 @@ app.post('/addproduct',async(req,res)=>{
     }
    
 })
-app.get('/product',async(req,res)=>{
-    let products = await productSchema.find().select('-_id')
+app.get('/',async(req,res)=>{
+    let products = await productSchema.find()
     if(products.length>0){
     res.send(products)
 
     }else{
         res.send({'result':"not found"})
     }
+    
+
 })
+app.delete('/:id',async(req,res)=>{
+    let deleteProduct = await productSchema.deleteOne({_id:req.params.id})
+    res.send(deleteProduct);
+})
+app.get('/:id',async(req,res)=>{
+    let getProduct = await productSchema.findOne({_id:req.params.id})
+    res.send(getProduct); 
+})
+
+app.put('/:id',async(req,res)=>{
+    let updateProduct= await productSchema.updateOne({_id:req.params.id},{$set:req.body})
+    res.send(updateProduct)
+})
+
+// app.get('/search/:key',async(req,res)=>{
+//     let findProduct = await productSchema.find({
+//        "$or":[
+//             {name:{$regex:req.params.name}},
+//             {company:{$regex:req.params.company}},
+//             {category:{$regex:req.params.category}}
+//         ]
+//     })
+//     res.send(findProduct)
+// })
+
+
 
 app.listen(PORT, () => {
     console.log('Server is open at localhost:8080')
